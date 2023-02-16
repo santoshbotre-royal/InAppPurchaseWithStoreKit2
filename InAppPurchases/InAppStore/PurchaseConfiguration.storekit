@@ -1,0 +1,104 @@
+{
+  "identifier" : "315B132A",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "D2399FE4",
+      "localizations" : [
+        {
+          "description" : "You can view the show for entire one week",
+          "displayName" : "Rent for 1 week",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "1_week",
+      "referenceName" : "OneWeekViewTime",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "3.00",
+      "familyShareable" : false,
+      "internalID" : "06576B64",
+      "localizations" : [
+        {
+          "description" : "You can view the show for entire one month",
+          "displayName" : "Rent for 1 month",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "1_month",
+      "referenceName" : "OneMonthViewTime",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "7.00",
+      "familyShareable" : false,
+      "internalID" : "293196BD",
+      "localizations" : [
+        {
+          "description" : "You can view the show for entire 3 months",
+          "displayName" : "Rent for 3 months",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "3_months",
+      "referenceName" : "QuaterlyViewTime",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_failTransactionsEnabled" : true,
+    "_storeKitError" : 14
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "5D468291",
+      "localizations" : [
+
+      ],
+      "name" : "Auto_Subscription",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "30.0",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "75CC0E13",
+          "introductoryOffer" : {
+            "displayPrice" : "24",
+            "internalID" : "76DF3B31",
+            "paymentMode" : "payUpFront",
+            "subscriptionPeriod" : "P1Y"
+          },
+          "localizations" : [
+            {
+              "description" : "You have Yearly subscription for this show",
+              "displayName" : "Yearly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "1_year",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Yearly",
+          "subscriptionGroupID" : "5D468291",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}
