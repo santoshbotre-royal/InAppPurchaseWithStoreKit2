@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import StoreKit
 
 struct MoviePurchaseView: View {
   
@@ -29,8 +30,12 @@ struct MoviePurchaseView: View {
       .sheet(
         isPresented: $presentedInAppPurchaseModal,
         content: {
-          ProductPurchaseListView()
-            .environmentObject(moviesViewModel.storeKitManager)
+          if #available(iOS 17, *) {
+            InAppProductListView(products: moviesViewModel.storeKitManager.products)
+          } else {
+            ProductPurchaseListView()
+              .environmentObject(moviesViewModel.storeKitManager)
+          }
       })
 
       Text(purchaseStatus())

@@ -32,7 +32,15 @@ class StoreKitManager: StoreKitManageable, ObservableObject {
   @Published private(set) var items = [Product] ()
   @Published var transactionCompletionStatus : Bool = false
   
-  private let productIds = ["1_week", "1_month", "3_months", "1_year"]
+  let products = [
+    ProductInApp(productID: "1_week", icon: "dishtv"),
+    ProductInApp(productID: "1_month", icon: "disney"),
+    ProductInApp(productID: "3_months", icon: "hbo"),
+    ProductInApp(productID: "6_months", icon: "bluray"),
+    ProductInApp(productID: "1_year", icon: "we")
+  ]
+  
+  let productIds = ["1_week", "1_month", "3_months", "6_months", "1_year"]
   private(set) var purchaseStatus: PurchaseStatus = .unknown
   private(set) var transactionListener: Task<Void, Error>?
   

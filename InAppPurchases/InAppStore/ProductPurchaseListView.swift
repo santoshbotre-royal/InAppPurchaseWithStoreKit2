@@ -20,7 +20,7 @@ struct ProductPurchaseListView: View {
       .padding()
         
     List(storeKitManager.items) { item in
-      ProductView(productPurchaseViewModel: ProductPurchaseViewModel(product: item, storeKitManager: storeKitManager))
+      ProductItemView(productPurchaseViewModel: ProductPurchaseViewModel(product: item, storeKitManager: storeKitManager))
         .listRowSeparator(.hidden)
     }
     .listStyle(PlainListStyle()) // Capture the leading and trailing white space.

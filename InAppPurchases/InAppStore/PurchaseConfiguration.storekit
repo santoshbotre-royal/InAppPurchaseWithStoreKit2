@@ -54,7 +54,55 @@
     "_askToBuyEnabled" : false,
     "_billingIssuesEnabled" : false,
     "_failTransactionsEnabled" : true,
-    "_storeKitError" : 14
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : true,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
   },
   "subscriptionGroups" : [
     {
@@ -62,7 +110,7 @@
       "localizations" : [
 
       ],
-      "name" : "Auto_Subscription",
+      "name" : "Auto Subscription",
       "subscriptions" : [
         {
           "adHocOffers" : [
@@ -93,12 +141,54 @@
           "referenceName" : "Yearly",
           "subscriptionGroupID" : "5D468291",
           "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+            {
+              "eligibility" : [
+                "new",
+                "existing",
+                "expired"
+              ],
+              "internalID" : "9F8D3D29",
+              "isStackable" : true,
+              "paymentMode" : "free",
+              "referenceName" : "Diwali",
+              "subscriptionPeriod" : "P3D"
+            }
+          ],
+          "displayPrice" : "18",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "DBBD2345",
+          "introductoryOffer" : {
+            "displayPrice" : "15",
+            "internalID" : "56FCB89E",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "payAsYouGo",
+            "subscriptionPeriod" : "P6M"
+          },
+          "localizations" : [
+            {
+              "description" : "You have 6 months subscription for this show",
+              "displayName" : "Half Yearly Subscription",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "6_months",
+          "recurringSubscriptionPeriod" : "P6M",
+          "referenceName" : "6 Months",
+          "subscriptionGroupID" : "5D468291",
+          "type" : "RecurringSubscription"
         }
       ]
     }
   ],
   "version" : {
-    "major" : 2,
+    "major" : 3,
     "minor" : 0
   }
 }

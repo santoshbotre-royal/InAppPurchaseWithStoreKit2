@@ -8,7 +8,7 @@
 import SwiftUI
 import StoreKit
 
-struct ProductView: View {
+struct ProductItemView: View {
   @EnvironmentObject private var storeKitManager: StoreKitManager
   let productPurchaseViewModel: ProductPurchaseViewModel
   
